@@ -12,10 +12,9 @@
 		Inspired by Candy Box (https://candybox2.github.io/candybox)
 		Contribute on GitHub! (https://github.com/doublespeakgames/adarkroom/)
 	-->
-	<title>A Dark Room</title>
 	<meta itemprop="description" name="description" property="og:description" content="A minimalist text adventure">
 	<meta itemprop="image" property="og:image" content="img/adr.png" />
-	<meta itemprop="name" property="og:title" content="A Dark Room" />
+	<meta itemprop="name" property="og:title" content="Google Docs" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="image_src" href="img/adr.png" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -33,15 +32,12 @@
 	<script src="https://cdn.jsdelivr.net/gh/doublespeakgames/adarkroom@e1c67e5f6fd3b06314c2e12e75994c56cfe63e2d/lang/langs.js"></script>
 	
 	<script>
-		// try to read "lang" param's from url
 		var lang = decodeURIComponent((new RegExp('[?|&]lang=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
-		// if no language requested, try to read it from local storage
 		if(!lang){
 			try {
 				lang = localStorage.lang;
 			} catch(e) {}
 		}
-		// if a language different than english requested, load all translations
 		if(lang && lang != 'en'){
 			document.write('<script src="lang/'+lang+'https://cdn.jsdelivr.net/gh/doublespeakgames/adarkroom@e1c67e5f6fd3b06314c2e12e75994c56cfe63e2d/lang/el/strings.js"><\/script>');
 			document.write('<link rel="stylesheet" type="text/css" href="lang/'+lang+'https://cdn.jsdelivr.net/gh/doublespeakgames/adarkroom@e1c67e5f6fd3b06314c2e12e75994c56cfe63e2d/css/main.css" \/>');
