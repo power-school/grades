@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 <html>
   <head>
     <title>
@@ -28,9 +28,11 @@
       }
     </style>
     <script>
-    function opengame(url) {
-      window.open(url)
-    }
+   function openGame(url) {
+        var win = window.open('');
+        win.document.write('<iframe src="' + url +'" frameborder="0"></iframe>');
+win.document.write('<style>iframe {width: 100%; height: 100%; frameborder: 0; border: none; margin: 0; padding: 0;} html, body { margin: 0; padding: 0px;}</style>');
+     }
     </script>
   </head>
   <body>
@@ -40,22 +42,22 @@
     <h1 class='header'>
       A
     </h1>
-      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/ADarkRoom")' class='buttons'>
+      <button onclick='openGame("https://jacobdavidsoniscool.github.io/games/ADarkRoom")' class='buttons'>
         A Dark Room
       </button>
-      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/ADayintheOffice")' class='buttons'>
+      <button onclick='openGame("https://jacobdavidsoniscool.github.io/games/ADayintheOffice")' class='buttons'>
         A Day in the Office
       </button>
-      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/AdventureCapitalist")' class='buttons'>
+      <button onclick='openGame("https://jacobdavidsoniscool.github.io/games/AdventureCapitalist")' class='buttons'>
         Adventure Capitalist
       </button>
-      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/Agesofconflict")' class='buttons'>
+      <button onclick='openGame("https://jacobdavidsoniscool.github.io/games/Agesofconflict")' class='buttons'>
         Ages of Conflict
       </button>
-      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/amongus")' class='buttons'>
+      <button onclick='openGame("https://jacobdavidsoniscool.github.io/games/amongus")' class='buttons'>
         Among Us
       </button>
-      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/asmallworldcup")' class='buttons'>
+      <button onclick='openGame("https://jacobdavidsoniscool.github.io/games/asmallworldcup")' class='buttons'>
         A Small World Cup
       </button>
 
