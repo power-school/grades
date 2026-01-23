@@ -21,26 +21,16 @@
                 cursor: pointer;
                 transition: transform 0.2s, background-color 0.2s;
             }
+      .header {
+        color: white;
+        font-family: Inter, sans-serif;
+        font-size: 20px;
+      }
     </style>
     <script>
-      function openADarkRoom() {
-        window.open('https://jacobdavidsoniscool.github.io/games/ADarkRoom')
-      }
-      function openadayintheoffice() {
-        window.open('https://jacobdavidsoniscool.github.io/games/ADayintheOffice')
-      }
-      function openadventurecapitalist() {
-        window.open('https://jacobdavidsoniscool.github.io/games/AdventureCapitalist')
-      }
-      function openagesofconflict() {
-        window.open('https://jacobdavidsoniscool.github.io/games/Agesofconflict')
-      }
-      function openamongus() {
-        window.open('https://jacobdavidsoniscool.github.io/games/amongus')
-      }
-      function openasmallworldcup() {
-        window.open('https://jacobdavidsoniscool.github.io/games/asmallworldcup')
-      }
+    function opengame(url) {
+      window.open(url)
+    }
     </script>
   </head>
   <body>
@@ -50,22 +40,22 @@
     <h1 class='header'>
       A
     </h1>
-      <button onclick='openADarkRoom()' class='buttons'>
+      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/ADarkRoom")' class='buttons'>
         A Dark Room
       </button>
-      <button onclick='openadayintheoffice()' class='buttons'>
+      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/ADayintheOffice")' class='buttons'>
         A Day in the Office
       </button>
-      <button onclick='openadventurecapitalist()' class='buttons'>
+      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/AdventureCapitalist")' class='buttons'>
         Adventure Capitalist
       </button>
-      <button onclick='openagesofconflict()' class='buttons'>
+      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/Agesofconflict")' class='buttons'>
         Ages of Conflict
       </button>
-      <button onclick='openamongus()' class='buttons'>
+      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/amongus")' class='buttons'>
         Among Us
       </button>
-      <button onclick='openasmallworldcup()' class='buttons'>
+      <button onclick='opengame("https://jacobdavidsoniscool.github.io/games/asmallworldcup")' class='buttons'>
         A Small World Cup
       </button>
 
